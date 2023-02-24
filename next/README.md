@@ -1,48 +1,36 @@
-Change an element's style on hover using Tailwind
+## Instructions
 
-Get data from the API using a custom fetch - define the state with TS
+You will find technical tasks related to your desired position below.
+Fork this repository, work on the tasks, and create a pull request.
+Make sure you comment your code as needed.
+Track your time and send an email with the link for the pull request and the time it took to complete once you are done.
 
-Display data on a table - fix an issue with the table
+Not being able to complete every task will NOT disqualify you as a candidate. Do your best and good luck!
 
-Disable user select for all except one
+### Tasks
 
-Fill in the request type for a user update
+-   Add `.next/` to `.gitignore`.
 
-Get query parameters and highlight the user specified
+-   Fix the missing dependency error.
 
-Disable layout for index
+-   Define the type of `children` in `./src/components/layouts/default.tsx'.
 
-Pass a TS-defined object to a sub react component
+-   On the index page, fetch data from `/api/clients` using the already imported custom `request` function to populate the table. Use a TypeScript interface to define a type in the `useState` you will implement.
 
-Fix the children issue
+-   Make sure that the genders, names, and emails of clients are matching. Client avatars do not have to match with client genders.
 
-Code a Formik form with the save button outside of the form
+-   Make sure that the full names of clients on the table are displayed. Hint: Use `Array.prototype.map()` to reformat data.
 
-Submit the form using axios
+-   Make sure that the client emails on the table are selectable and copiable by the user.
 
-Fix a useEffect that doesn't get fired
+-   Define the custom color `#EE964B` as `sandy` in Tailwind.
 
-Ignore .next in Git
+-   Get a query parameter named `highlight` from the URL in the index page using `useEffect()`.
 
-Use the Next router to highlight an user with query
+-   If there is a client with the same ID as `highlight`'s value, change their background color on the table to `sandy`.
 
-Make sure that the genders from faker match the names and emails
+-   Use the styling from `./src/examples/modals.tsx` and `./src/examples/forms.tsx` to create a Formik form with Yup validation for registering a client inside a modal.
 
-Catch user/:id request and serve
+-   Make the 'Register new client' button open the modal with the form inside.
 
-Filter object function to get whether the user has any params
-
-Make a custom formik input
-
-Populate formik form with user data
-
-Define a custom Tailwind color
-
-Comment everything that needs it + comment some existing map code
-
-Track the time it took and submit it in a Google form with a drive zip attached
-
-/
-users
-user/:id
-signout
+-   Complete the `onRegister` function to make a `POST` request to `/api/clients` with the form data using the already imported custom `request` function.
