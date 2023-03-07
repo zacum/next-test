@@ -1,29 +1,8 @@
 import type { NextPage } from 'next';
 import { useState, useEffect } from 'react';
-import { request } from '../utils/frontEnd';
-import ClientTable from '../components/tables/client';
-import { IValues } from '../components/modals/RegisterModal';
-
-export interface IPClient {
-  id: string;
-  avatar: string;
-  email: string;
-  fullName: string;
-  supportTier: 'standard' | 'gold' | 'platinum';
-  hourlyRate: number;
-}
-
-export interface IRClient {
-  id: string;
-  avatar: string;
-  birthday: string;
-  email: string;
-  firstName: string;
-  lastName: string;
-  sex: string;
-  supportTier: 'standard' | 'gold' | 'platinum';
-  hourlyRate: number;
-}
+import { request } from '../../utils/frontEnd';
+import ClientTable from '../../components/tables/client';
+import { IPClient, IRClient } from '../index';
 
 const Index: NextPage = () => {
   const [clients, setClients] = useState<IPClient[]>([]);
@@ -44,8 +23,8 @@ const Index: NextPage = () => {
     })
   }, []);
 
-  const onRegister = (body: IValues) => {
-    return request('POST', '/clients', body);
+  const onRegister = () => {
+    return request('POST', '/clients');
   }
 
   return (

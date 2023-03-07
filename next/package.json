@@ -1,30 +1,36 @@
 {
-    "name": "next",
-    "version": "1.0.0",
-    "main": "index.js",
-    "license": "MIT",
-    "scripts": {
-        "dev": "next dev",
-        "build": "next build",
-        "start": "node ./src/server.js",
-        "lint": "next lint"
-    },
-    "dependencies": {
-        "@faker-js/faker": "^7.6.0",
-        "@headlessui/react": "^1.7.11",
-        "@heroicons/react": "^2.0.16",
-        "@tailwindcss/forms": "^0.5.3",
-        "autoprefixer": "^10.4.13",
-        "formik": "^2.2.9",
-        "next": "^13.1.6",
-        "postcss": "^8.4.21",
-        "react-dom": "^18.2.0",
-        "tailwindcss": "^3.2.7",
-        "typescript": "^4.9.5",
-        "yup": "^1.0.0"
-    },
-    "devDependencies": {
-        "@types/node": "^18.14.1",
-        "@types/react": "^18.0.28"
-    }
+  "name": "next",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "@fortawesome/fontawesome-svg-core": "^6.3.0",
+    "@fortawesome/free-solid-svg-icons": "^6.3.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@headlessui/react": "^1.7.11",
+    "@heroicons/react": "^2.0.16",
+    "@tailwindcss/forms": "^0.5.3",
+    "@types/react-copy-to-clipboard": "^5.0.4",
+    "autoprefixer": "^10.4.13",
+    "formik": "^2.2.9",
+    "next": "^13.1.6",
+    "postcss": "^8.4.21",
+    "react": "^18.2.0",
+    "react-copy-to-clipboard": "^5.1.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.2.7",
+    "typescript": "^4.9.5",
+    "yup": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.1",
+    "@types/react": "^18.0.28"
+  }
 }
